@@ -166,7 +166,8 @@ html.has-reveal [data-reveal].is-in { opacity: 1; transform: none; }
 .phone { margin-top: 22px; display: inline-block; font-family: var(--serif); font-size: 26px; color: var(--deep); }
 
 /* Rodapé */
-.site-footer { padding: 46px 8vw 28px; color: #cde9d3; background: var(--ink); }
+/* fundo extra para os botões flutuantes não cobrirem a última linha */
+.site-footer { padding: 46px 8vw 100px; color: #cde9d3; background: var(--ink); }
 .site-footer .brand-name { color: var(--white); }
 .site-footer .brand-name small { color: #8fbc9a; }
 .footer-top { display: flex; justify-content: space-between; align-items: center; padding-bottom: 26px; border-bottom: 1px solid var(--line-light); }
@@ -285,6 +286,7 @@ html.has-reveal [data-reveal].is-in { opacity: 1; transform: none; }
   .footer-top { flex-direction: column; align-items: flex-start; gap: 14px; }
   .whatsapp-float { right: 14px; bottom: 80px; }
   .chat { right: 14px; bottom: 14px; }
+  .site-footer { padding-bottom: 150px; }
   .chat-launcher span { display: none; }
   .chat-launcher { width: 52px; padding: 0; justify-content: center; }
   .chat-panel { height: min(560px, calc(100vh - 28px)); }
